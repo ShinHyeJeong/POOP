@@ -19,7 +19,7 @@ for(let i = 0; i< icons.length; i++)
 
 function iconClickFn(event)
 {
-    let tempClickNum = event.path[1].getAttribute('clickVal');
+    let tempClickNum = event.path[0].getAttribute('clickVal');
     let tempImgDom = event.path[0];
     changeMatrix(tempClickNum,tempImgDom);
 }
